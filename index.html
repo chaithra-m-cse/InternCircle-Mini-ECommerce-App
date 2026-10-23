@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Mini E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+
+        <div>
+            <h1>ShopEase</h1>
+            <p>Simple shopping, better choices.</p>
+        </div>
+
+        <button id="cartButton" class="cart-button">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- Products -->
+        <section class="products-section">
+
+            <div class="section-heading">
+                <h2>Our Products</h2>
+                <p>Explore our collection and add your favourites to the cart.</p>
+            </div>
+
+            <!-- Products will be created using JavaScript -->
+            <div id="productContainer" class="product-container"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Cart Panel -->
+    <aside id="cartPanel" class="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCartButton" class="close-button">
+                &times;
+            </button>
+
+        </div>
+
+        <!-- Cart items inserted using JavaScript -->
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong>₹<span id="cartTotal">0</span></strong>
+            </div>
+
+            <button id="checkoutButton" class="checkout-button">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Dark background when cart/modal opens -->
+    <div id="overlay" class="overlay"></div>
+
+
+    <!-- Checkout Preview Modal -->
+    <div id="checkoutModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModalButton" class="modal-close">
+                &times;
+            </button>
+
+            <h2>Checkout Preview</h2>
+
+            <p class="modal-subtitle">
+                Review your order before checkout.
+            </p>
+
+            <div id="checkoutItems"></div>
+
+            <div class="checkout-summary">
+                <span>Total Amount</span>
+                <strong>₹<span id="checkoutTotal">0</span></strong>
+            </div>
+
+            <button id="confirmOrderButton" class="confirm-button">
+                Confirm Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 ShopEase. Mini E-Commerce Project.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
